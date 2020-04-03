@@ -1,4 +1,9 @@
 package pl.accenture.oop;
 
-public class RaceCar {
+public class RaceCar extends Car{
+
+    @Override
+    public double getFuelNeeds() {
+        return 70;
+    }
 }
