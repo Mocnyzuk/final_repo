@@ -16,13 +16,17 @@ class PlaneTest {
         double fuelNeeds = plane.getFuelNeeds();
         // Then
         assertEquals(100, fuelNeeds);
-
-
     }
 
     @Test
     @DisplayName("getDistance test")
     void getDistance() {
-
+        // Given
+        Plane plane = new Plane();
+        // When
+        double distance = plane.getFuelNeeds();
+        // Then
+        assertEquals(100, distance);
     }
+
 }
