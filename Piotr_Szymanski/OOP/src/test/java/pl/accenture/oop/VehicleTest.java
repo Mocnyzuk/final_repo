@@ -13,8 +13,9 @@ class VehicleTest {
         // Given
         Vehicle vehicle = new Vehicle();
         // When
+        double fuelNeeds = vehicle.getFuelNeeds();
         // Then
-        assertEquals(7, vehicle.getFuelNeeds());
+        assertEquals(7, fuelNeeds);
     }
 
     @Test
@@ -23,13 +24,21 @@ class VehicleTest {
         // Given
         Vehicle vehicle = new Vehicle();
         // When
+        double distance = vehicle.getDistance();
         // Then
-        assertEquals(100, vehicle.getDistance());
+        assertEquals(100, distance);
     }
 
     @Test
     @DisplayName("calculateFuelConsumption test")
     void calculateFuelConsumption() {
+        // Given
+        Vehicle vehicle = new Vehicle();
+        // When
+        double exptectedFuelConsumption = vehicle.getDistance() / vehicle.getFuelNeeds();
+        double outcome = vehicle.calculateFuelConsumption();
+        // Then
+        assertEquals(exptectedFuelConsumption, outcome);
     }
 
 }
