@@ -11,6 +11,19 @@ import static org.junit.jupiter.api.Assertions.*;
 class BubbleSorterTest {
 
     @Test
+    @DisplayName("if the algorithm sorts correctly a not sorted array")
+    void sortArrayNotSorted() {
+        //given
+        int[] arrayToSortByJavaUtil = ArrayGenerator.deliverRandomArray(15);
+        int[] arrayToSortByAlgorithm = arrayToSortByJavaUtil.clone();
+        //when
+        BubbleSorter.sort(arrayToSortByAlgorithm);
+        Arrays.sort(arrayToSortByJavaUtil);
+        //then
+        assertArrayEquals(arrayToSortByAlgorithm, arrayToSortByJavaUtil);
+    }
+
+    @Test
     @DisplayName("if the algorithm sorts correctly an array sorted desc")
     void sortArraySortedDesc() {
         //given
