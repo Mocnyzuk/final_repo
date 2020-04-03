@@ -8,7 +8,7 @@ public class MainFactory {
 
     }
 
-    // Implementation of factory design pattern
+    // Factory design pattern
     public Vehicle chooseVehicle(int speed, int cargo ) {
         if (cargo > 1000) {
             return new Ship();

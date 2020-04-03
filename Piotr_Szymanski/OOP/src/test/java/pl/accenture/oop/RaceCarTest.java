@@ -16,6 +16,6 @@ class RaceCarTest {
         double fuelNeeds = raceCar.getFuelNeeds();
         // Then
         assertEquals(70, fuelNeeds);
-
     }
+
 }
