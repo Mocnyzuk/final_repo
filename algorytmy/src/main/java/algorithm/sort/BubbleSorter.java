@@ -2,6 +2,9 @@ package algorithm.sort;
 
 public class BubbleSorter {
 
+    private BubbleSorter() {
+    }
+
     public static void sort(int[] arrayToSort) {
         for (int i = 0; i < arrayToSort.length-1; i++) {
             for (int j = 0; j < arrayToSort.length - i - 1; j++) {
