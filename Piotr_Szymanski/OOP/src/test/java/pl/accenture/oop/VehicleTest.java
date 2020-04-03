@@ -20,6 +20,11 @@ class VehicleTest {
     @Test
     @DisplayName("getDistance test")
     void getDistance() {
+        // Given
+        Vehicle vehicle = new Vehicle();
+        // When
+        // Then
+        assertEquals(100, vehicle.getDistance());
     }
 
     @Test
