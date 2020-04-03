@@ -36,4 +36,5 @@ public class Vehicle {
     public void stop() {
         System.out.println("The cars stops");
     }
+
 }
