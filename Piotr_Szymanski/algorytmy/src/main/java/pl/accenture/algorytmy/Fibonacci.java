@@ -22,7 +22,7 @@ public class Fibonacci {
         }
         BigInteger previousElement = new BigInteger("0"),
                     currentElement = new BigInteger("1"),
-                       nextElement = new BigInteger("0");
+                       nextElement;
         for (int i = 1; i < n; i++) {
             nextElement = currentElement.add(previousElement);
             previousElement = currentElement;
@@ -30,4 +30,10 @@ public class Fibonacci {
         }
         return currentElement;
     }
+
+    public static BigInteger fibonacciMemoization(int n) {
+        return BigInteger.ONE;
+    }
+
+
 }
