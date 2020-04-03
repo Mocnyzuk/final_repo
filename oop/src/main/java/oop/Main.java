@@ -16,11 +16,11 @@ public class Main {
 
         Pizza pizza2 = Pizza.PizzaBuilder.aPizza(20, "Pepperoni", Sauce.SALSA, Cheese.PARMESAN)
                 .withMeat(Meat.PEPPERONI)
-                .withMeat(Meat.HAM)
                 .withMushroom(true)
                 .withTomato(true)
                 .build();
 
+        System.out.println(pizza1.toString());
         System.out.println(pizza2.toString());
     }
 }
