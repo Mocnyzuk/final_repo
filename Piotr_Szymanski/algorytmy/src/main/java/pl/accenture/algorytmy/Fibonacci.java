@@ -1,8 +1,18 @@
 package pl.accenture.algorytmy;
 
 import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Fibonacci {
+
+    private static List<BigInteger> calculatedSequence = new ArrayList<BigInteger>(
+            Arrays.asList(
+                    new BigInteger("0"),
+                    new BigInteger("1")
+            )
+    );
 
     public static BigInteger fibonacciRecursion(int n) {
         if (n == 0) {
@@ -32,8 +42,26 @@ public class Fibonacci {
     }
 
     public static BigInteger fibonacciMemoization(int n) {
-        return BigInteger.ONE;
+        if (n == 0) {
+            return calculatedSequence.get(0);
+        }else if (n == 1) {
+            return calculatedSequence.get(1);
+        }
+        int maxElementIndex = calculatedSequence.size() - 1;
+        if (maxElementIndex >= n ) {
+            return calculatedSequence.get(n);
+        } else {
+            BigInteger previousElement = calculatedSequence.get(maxElementIndex - 1),
+                        currentElement = calculatedSequence.get(maxElementIndex),
+                           nextElement;
+            for (int i = maxElementIndex; i < n; i++) {
+                nextElement = currentElement.add(previousElement);
+                previousElement = currentElement;
+                currentElement = nextElement;
+                calculatedSequence.add(currentElement);
+            }
+            return  currentElement;
+        }
     }
-
 
 }
