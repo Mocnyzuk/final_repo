@@ -90,6 +90,21 @@ public class Pizza {
         this.onion = onion;
     }
 
+    @Override
+    public String toString() {
+        return "Pizza{" +
+                "sizeInCM=" + sizeInCM +
+                ", type='" + type + '\'' +
+                ", sauce=" + sauce +
+                ", meat=" + meat +
+                ", cheese=" + cheese +
+                ", extraCheese=" + extraCheese +
+                ", tomato=" + tomato +
+                ", mushroom=" + mushroom +
+                ", onion=" + onion +
+                '}';
+    }
+
     public static class PizzaBuilder {
         private int sizeInCM;
         private String type;
