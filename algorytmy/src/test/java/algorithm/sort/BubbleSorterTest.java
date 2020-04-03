@@ -51,4 +51,26 @@ class BubbleSorterTest {
         assertArrayEquals(arrayToSortByAlgorithm, arrayToSortByJavaUtil);
     }
 
+
+    @Test
+    @DisplayName("if the swap method swaps correctly array containing 2 elements")
+    void swapTwoElements() {
+        //given
+        int[] arrayToSwap = {20,8};
+        //when
+        BubbleSorter.swapElements(arrayToSwap, 0, 1);
+        //then
+        assertArrayEquals(arrayToSwap, new int[] {8,20});
+    }
+
+    @Test
+    @DisplayName("if the swap method swaps correctly array containing more than 2 elements")
+    void swapElementsBiggerArray() {
+        //given
+        int[] arrayToSwap = {1, 5, 20, 8, 25, 36};
+        //when
+        BubbleSorter.swapElements(arrayToSwap, 3, 4);
+        //then
+        assertArrayEquals(arrayToSwap, new int[] {1, 5, 20, 25, 8, 36});
+    }
 }
