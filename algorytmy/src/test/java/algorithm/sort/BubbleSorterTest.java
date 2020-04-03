@@ -3,9 +3,7 @@ package algorithm.sort;
 import algorithm.ArrayGenerator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class BubbleSorterTest {
@@ -49,8 +47,6 @@ class BubbleSorterTest {
         assertArrayEquals(arrayToSortByAlgorithm, arrayToSortByJavaUtil);
     }
 
-
-
     @Test
     @DisplayName("if the algorithm sorts correctly an array with repeating elements")
     void sortArrayNotSortedWithRepeatingElements() {
@@ -63,7 +59,6 @@ class BubbleSorterTest {
         //then
         assertArrayEquals(arrayToSortByAlgorithm, arrayToSortByJavaUtil);
     }
-
 
     @Test
     @DisplayName("if the swap method swaps correctly array containing 2 elements")

@@ -23,5 +23,4 @@ public class ArrayGenerator {
         }
         return arrayOfIntegers;
     }
-
 }
