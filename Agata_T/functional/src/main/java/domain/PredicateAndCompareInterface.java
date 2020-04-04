@@ -2,11 +2,13 @@ package domain;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Provides filtering and sorting the list using predicates and comparators from People Class. Uses StreamAPI.
- */
+
 @FunctionalInterface
 public interface PredicateAndCompareInterface {
+    /**
+     * Provides filtering and sorting the list using predicates and comparators from People Class. Uses StreamAPI.
+     * @return filtered and sorted list.
+     */
     List<Person> filterAndSort(List<Person> people);
 
     PredicateAndCompareInterface ifWomanSortByFirstName = people -> people
