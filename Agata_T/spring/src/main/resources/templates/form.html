@@ -1,11 +1,12 @@
 <html xmlns:th="http://www.w3.org/1999/xhtml">
 <body>
+<p>Welcome! Do you want to get random cat fact? Let's see what we can get you. To use this site you must be over 15 yo.</p>
 <form action="#" th:action="@{/}" th:object="${personForm}" method="post">
     <table>
         <tr>
             <td>Name:</td>
             <td><input type="text" th:field="*{firstName}" /></td>
-            <td th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">Name Error</td>
+            <td th:if="${#fields.hasErrors('firstName')}" th:errors="{firstName}">Name error</td>
         </tr>
         <tr>
             <td>Age:</td>

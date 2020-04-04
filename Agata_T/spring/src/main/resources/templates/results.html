@@ -1,5 +1,13 @@
-<html>
-<body>
-Congratulations! You are old enough to sign up for this site.
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>Ok! you are old enough to see a random cat fact!<br/>
+Here it is:<br/>
+<p style="font-size: x-large; font-weight: 600" th:text="${text}"></p>
 </body>
 </html>
+
+
