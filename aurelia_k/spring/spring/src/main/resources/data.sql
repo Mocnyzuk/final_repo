@@ -1,0 +1,1 @@
+insert into `person` (`name`, `lastname`,  `age`, `is_happy`, `work`) values ('Jan', 'Kowalski', 23, true, true);
