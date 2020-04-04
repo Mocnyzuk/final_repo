@@ -7,19 +7,19 @@ import java.util.stream.Collectors;
 public interface PredicateAndCompareInterface {
     List<Person> filterAndSort(List<Person> people);
 
-    PredicateAndCompareInterface useFirstPredAndCompar = people -> people
+    PredicateAndCompareInterface ifWomanSortByFirstName = people -> people
             .stream()
             .filter(Person.ifFirstNameEndsWithA)
             .sorted(Person.sortByFirstName)
             .collect(Collectors.toList());
 
-    PredicateAndCompareInterface useSecondPredAndCompar = people -> people
+    PredicateAndCompareInterface ifBlueEyesSortByLastName = people -> people
             .stream()
             .filter(Person.ifPersonGotBlueEyes)
             .sorted(Person.sortByLastName.reversed())
             .collect(Collectors.toList());
 
-    PredicateAndCompareInterface useThirdPredAndCompar = people -> people
+    PredicateAndCompareInterface ifAdultSortByAgeThenLastName = people -> people
             .stream()
             .filter(Person.ifPersonIsAdult)
             .sorted(Person.sortByAge.thenComparing(Person.sortByLastName))
