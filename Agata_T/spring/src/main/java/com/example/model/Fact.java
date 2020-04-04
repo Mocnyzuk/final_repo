@@ -12,5 +12,9 @@ public class Fact {
     }
 
 
+    @Override
+    public String toString() {
+        return "Random cat fact: "+ text;
+    }
 }
 
