@@ -4,6 +4,9 @@ import domain.EyeColor;
 import domain.Person;
 import java.util.List;
 
+/**
+ * Provides generating people List to be delivered into FilterAndSorter.
+ * */
 public class PeopleListGenerator {
 
     private PeopleListGenerator() {
