@@ -9,18 +9,26 @@ import oop.domain.Sauce;
 public class Main {
     public static void main(String[] args) {
 
-        Pizza pizza1 = Pizza.PizzaBuilder.aPizza(30,"Margherita", Sauce.TOMATO, Cheese.MOZZARELLA)
-                .withExtraCheese(true)
-                .withMushroom(true)
+        Pizza margherita = Pizza.builder()
+                .sizeInCM(30)
+                .type("margherita")
+                .sauce(Sauce.TOMATO)
+                .cheese(Cheese.MOZZARELLA)
+                .tomato(true)
                 .build();
 
-        Pizza pizza2 = Pizza.PizzaBuilder.aPizza(20, "Pepperoni", Sauce.SALSA, Cheese.PARMESAN)
-                .withMeat(Meat.PEPPERONI)
-                .withMushroom(true)
-                .withTomato(true)
+        Pizza pepperoni = Pizza.builder()
+                .sizeInCM(20)
+                .type("pepperoni")
+                .sauce(Sauce.SALSA)
+                .cheese(Cheese.PARMESAN)
+                .meat(Meat.PEPPERONI)
+                .mushroom(true)
+                .olive(true)
                 .build();
 
-        System.out.println(pizza1.toString());
-        System.out.println(pizza2.toString());
+
+        System.out.println(margherita.toString());
+        System.out.println(pepperoni.toString());
     }
 }
