@@ -3,7 +3,14 @@ package pl.accenture;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Sort {
+    /**
+     * Simple sorting method with time complexity O(n^2) and memory O(1)
+     * @param list List to sort
+     * @param <T> Type of elements in list which implements Comparable
+     * @return New sorted list
+     */
     public static <T extends Comparable<T>> List<T> bubbleSort(List<T> list){
         int size = list.size();
         T temp;
