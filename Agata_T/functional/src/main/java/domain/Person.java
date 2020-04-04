@@ -6,6 +6,9 @@ import lombok.Data;
 import java.util.Comparator;
 import java.util.function.Predicate;
 
+/**
+ * Represents a person.
+ */
 @Data
 @AllArgsConstructor
 public class Person {
