@@ -11,6 +11,8 @@ public class FilterAndSorter {
     static final List<Person> PEOPLE = PeopleListGenerator.generate();
 
     public static void main(String[] args) {
+        PEOPLE.forEach(System.out::println);
+        System.out.println("After filtering and sorting using different criteria:");
         usePredicateAndComparator(ifWomanSortByFirstName);
         usePredicateAndComparator(ifBlueEyesSortByLastName);
         usePredicateAndComparator(ifAdultSortByAgeThenLastName);
