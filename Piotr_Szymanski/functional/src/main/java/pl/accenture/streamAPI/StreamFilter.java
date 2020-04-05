@@ -10,6 +10,9 @@ import java.util.Objects;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+/***
+ * StreamApi filter practice
+ */
 public class StreamFilter {
 
     List<String> filterFirstLetter(List<String> list, String letter) {
