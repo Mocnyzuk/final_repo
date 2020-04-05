@@ -1,10 +1,15 @@
 package oop.domain;
 
-import lombok.Builder;
-import lombok.ToString;
+import lombok.*;
 
+/**
+ * Represents a pizza. Implemented builder design pattern using Lombok.
+ * */
 @Builder
 @ToString
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Pizza {
     private int sizeInCM;
     private String type;
