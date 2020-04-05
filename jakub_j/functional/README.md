@@ -1,5 +1,5 @@
-#Functional programming
-##by Jakub Jureczko
+# Functional programming
+#### by Jakub Jureczko
 
 Book model field's:
 > - Title 
