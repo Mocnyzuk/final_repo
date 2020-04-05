@@ -2,6 +2,7 @@ package pl.accenture.oop;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import pl.accenture.oop.factoryPattern.elements.Car;
 
 import static org.junit.jupiter.api.Assertions.*;
 
