@@ -2,7 +2,7 @@ package algorithm;
 import java.util.Random;
 
 /**
- * ArrayGenerator delivers the array filled with random integers range from 0 to 100.
+ * Delivers an array filled with random integers range from 0 to 100.
  */
 public class ArrayGenerator {
 
