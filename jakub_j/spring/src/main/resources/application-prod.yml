@@ -1,0 +1,14 @@
+spring:
+  profiles: prod
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/testdb
+    username: root
+    password: root
+logging:
+  level:
+    org:
+      springframework:
+        web: INFO

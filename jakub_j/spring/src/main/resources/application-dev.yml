@@ -1,0 +1,15 @@
+spring:
+  profiles: dev
+  security:
+    user:
+      name: user
+      password: user
+      roles: ADMIN
+  h2:
+    console:
+      enabled: true
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
