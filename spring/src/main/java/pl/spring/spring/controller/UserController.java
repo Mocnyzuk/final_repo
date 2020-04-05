@@ -31,7 +31,6 @@ public class UserController {
      *      /users/list
      *      This GET method shows a list of all users
      **/
-
     @GetMapping("/list")
     public ResponseEntity<List<User>> getUsers() {
         List<User> users = userRepository.findAll();
