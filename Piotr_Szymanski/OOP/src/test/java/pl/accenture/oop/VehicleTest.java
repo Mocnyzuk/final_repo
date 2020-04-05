@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class VehicleTest {
 
     @Test
-    @DisplayName("getFuelNeeds test")
+    @DisplayName("Should return 7")
     void getFuelNeeds() {
         // Given
         Vehicle vehicle = new Vehicle();
@@ -19,7 +19,7 @@ class VehicleTest {
     }
 
     @Test
-    @DisplayName("getDistance test")
+    @DisplayName("Should return 100")
     void getDistance() {
         // Given
         Vehicle vehicle = new Vehicle();
@@ -30,7 +30,7 @@ class VehicleTest {
     }
 
     @Test
-    @DisplayName("calculateFuelConsumption test")
+    @DisplayName("For distance = 100, fuelNeeds = 5 should return 20")
     void calculateFuelConsumption() {
         // Given
         Vehicle vehicle = new Vehicle();

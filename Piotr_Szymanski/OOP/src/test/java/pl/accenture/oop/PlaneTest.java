@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PlaneTest {
 
     @Test
-    @DisplayName("getFuelNeeds test")
+    @DisplayName("Should return 100")
     void getFuelNeeds() {
         // Given
         Plane plane = new Plane();
@@ -19,7 +19,7 @@ class PlaneTest {
     }
 
     @Test
-    @DisplayName("getDistance test")
+    @DisplayName("Should return 100")
     void getDistance() {
         // Given
         Plane plane = new Plane();

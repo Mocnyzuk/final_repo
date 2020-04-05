@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class RaceCarTest {
 
     @Test
-    @DisplayName("getFuelNeeds test")
+    @DisplayName("Should return 70")
     void getFuelNeeds() {
         // Given
         RaceCar raceCar = new RaceCar();
