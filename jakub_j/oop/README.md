@@ -1,5 +1,5 @@
-#Object Oriented Programming
-##by Jakub Jureczko
+# Object Oriented Programming (DP)
+#### by Jakub Jureczko
 
 Simple implementation of:
  > - `Singleton`: for Planets
