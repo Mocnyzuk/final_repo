@@ -8,7 +8,7 @@ public class CaesarCipher {
     public static char[] plaintextToCiphertext(String phrase, int key) {
 
         char[] letters = phrase.toCharArray();
-        key = key % 26;
+        key = key % 5;
 
         for (int i = 0; i < letters.length; i++) {
             if (charIsALetter(letters[i]))
