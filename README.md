@@ -1,22 +1,4 @@
-# final_repo
-  Repozytorium uczestników szkółki
-  
-## struktura repozytorium
-	
-### branch imie_n
-
-### w konkretnej gałęzi
-```
-.
-├── README.md
-├── imie_n
-    ├── algorytmy
-    ├── oop
-    ├── functional
-    ├── spring
-
-```      
-
+  Repozytorium Java Academy Aneta Zelik
   
 ## Zawartość podkatalogów z projektami
    
